@@ -1,5 +1,7 @@
 package Animal;
 
+import static java.lang.String.format;
+
 public class Dog extends Animal {
 
     private String name;
@@ -15,8 +17,6 @@ public class Dog extends Animal {
 
     @Override
     public String toString() {
-        String sb = "Dog{" + "name='" + name + '\'' +
-                '}';
-        return sb;
+        return format("Dog { name = '%s' }", name);
     }
 }

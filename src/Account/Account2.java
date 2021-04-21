@@ -1,5 +1,7 @@
 package Account;
 
+import static java.lang.String.*;
+
 public class Account2<T,S extends Number> {
 
     private T id;
@@ -16,10 +18,6 @@ public class Account2<T,S extends Number> {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Account2{");
-        sb.append("id=").append(id);
-        sb.append(", sum=").append(sum);
-        sb.append('}');
-        return sb.toString();
+        return format("Account2 { id = %s, sum = %s}", id, sum);
     }
 }
